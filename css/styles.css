@@ -587,3 +587,43 @@ body {
 .work-list-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
+
+.work-list .thumb {
+  position: relative;
+}
+
+.work-list .thumb::before {
+  position: absolute;
+
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.8);
+  opacity: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  opacity: 0;
+}
+
+.work-list .thumb:hover::before,
+.work-list .thumb:hover::before,
+.overlay-text:hover,
+.overlay-text:focus {
+  opacity: 1;
+}
