@@ -154,6 +154,23 @@ body {
   color: var(--accent-color);
 }
 
+.main-nav .item {
+  position: relative;
+}
+
+.current.link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: currentColor;
+}
+
 /* CONTACTS */
 
 .contacts {
@@ -628,9 +645,9 @@ body {
   opacity: 0;
 }
 
-.work-list .thumb:hover::before,
-.work-list .thumb:hover::before,
-.overlay-text:hover,
-.overlay-text:focus {
+.work-list-link:hover .overlay-text,
+.work-list-link:focus .overlay-text,
+.work-list-link:hover .thumb::before,
+.work-list-link:focus .thumb::before {
   opacity: 1;
 }
