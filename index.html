@@ -63,7 +63,7 @@
       <!-- HERO -->
       <section class="hero">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
       </section>
 
       <!-- VALUES -->
@@ -130,9 +130,7 @@
                   alt="робочий стол з комп'ютером"
                   class="labour-image"
                 />
-                <p class="labour-text">
-                    Десктопні додатки
-                </p>
+                <p class="labour-text">Десктопні додатки</p>
               </div>
             </li>
             <li class="item">
@@ -144,9 +142,7 @@
                   alt="ноутбук"
                   class="labour-image"
                 />
-                <p class="labour-text">
-                   Мобільні додатки 
-                </p>
+                <p class="labour-text">Мобільні додатки</p>
               </div>
             </li>
             <li class="item">
@@ -158,9 +154,7 @@
                   alt="планшет"
                   class="labour-image"
                 />
-                <p class="labour-text">
-                    Дизайнерські рішення
-                </p>
+                <p class="labour-text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -390,6 +384,13 @@
           </ul>
         </div>
       </section>
+      <!-- MODAL WINDOW -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" data-modal-close></button>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
@@ -450,5 +451,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
